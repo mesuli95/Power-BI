@@ -109,6 +109,23 @@
 1. Analysis Services models have calculations already created.
 2. If you don’t need an entire table, you can query the data directly. Instead of using Transact-SQL (T-SQL) to query the data, like you would in SQL Server, you can use multi-dimensional expressions (MDX) or data analysis expressions (DAX).
 
+# Unpivot columns
+
+* Unpivoting is a useful feature of Power BI. You can use this feature with data from any data source, but you would most often use it when importing data from Excel.
+
+  ![image](https://github.com/mesuli95/Power-BI/assets/162970734/56955c97-74db-4ae1-b64b-c3aac5ade321)
+
+* Though the data might initially make sense, it would be difficult to create a total of all sales combined from 2018 and 2019.
+* Your goal would then be to use this data in Power BI with three columns: Month, Year, and SalesAmount.
+
+* When you import the data into Power Query, it will look like the following image.
+
+![image](https://github.com/mesuli95/Power-BI/assets/162970734/a3f5502d-19fe-49bb-b260-242a197157d2)
+
+
+
+
+
 
 
 </details>
