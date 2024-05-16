@@ -59,6 +59,15 @@
 * Add tiles to a dashboard by pinning a visual in a report to the dashboard.
 * Dashboards are an excellent way to provide high-level information to consumers.
 
+
 </details>
 
+<details>
+ <summary> Get and Tranform data with Power BI </summary>
+
+# Get data from files
+
+
+
+</details>
 
