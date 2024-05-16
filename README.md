@@ -67,6 +67,48 @@
 
 # Get data from files
 
+* Organizations often export and store data in files. One possible file format is a flat file.
+* A flat file is a type of file that has only one data table and every row of data is in the same structure.
+* The file doesn't contain hierarchies. Likely, you're familiar with the most common types of flat files, which are comma-separated values (.csv) files, delimited text (.txt) files, and fixed width files.
+
+# Flat file location
+
+* Local - You can import data from a local file into Power BI. The file isn't moved into Power BI, and a link doesn't remain to it. Instead, a new semantic model is created in Power BI, and data from the Excel file is loaded into it. Accordingly, changes to the original Excel file aren't reflected in your Power BI semantic model. You can use local data import for data that doesn't change.
+
+* OneDrive for Business - You can pull data from OneDrive for Business into Power BI. This method is effective in keeping an Excel file and your semantic model, reports, and dashboards in Power BI synchronized. Power BI connects regularly to your file on OneDrive. If any changes are found, your semantic model, reports, and dashboards are automatically updated in Power BI.
+
+* OneDrive - Personal - You can use data from files on a personal OneDrive account, and get many of the same benefits that you would with OneDrive for Business. However, you'll need to sign in with your personal OneDrive account, and select the Keep me signed in option. Check with your system administrator to determine whether this type of connection is allowed in your organization.
+
+* SharePoint - Team Sites - Saving your Power BI Desktop files to SharePoint Team Sites is similar to saving to OneDrive for Business. The main difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
+
+# Change the source file
+
+* You might have to change the location of a source file for a data source during development, or if a file storage location changes.
+* To keep your reports up to date, you'll need to update your file connection paths in Power BI.
+  
+# Power Query provides many ways for you to accomplish this task, so that you can make this type of change when needed.
+
+1. Data source settings
+2. Query settings
+3. dvanced Editor
+
+# Get data from Azure Analysis Services
+
+* Azure Analysis Services is a fully managed platform as a service (PaaS) that provides enterprise-grade semantic models in the cloud.
+* You can use advanced mashup and modeling features to combine data from multiple data sources, define metrics, and secure your data in a single, trusted tabular semantic model.
+* The semantic model provides an easier and faster way for users to perform ad hoc data analysis using tools like Power BI.
+* You’ve been asked to compare this data with actual sales data in a different database.
+* Getting data from Azure Analysis Services server is similar to getting data from SQL Server, in that you can
+
+1. Authenticate to the server.
+2. Pick the model you want to use.
+3. Select which tables you need.
+
+# Notable differences between Azure Analysis Services and SQL Server are: 
+
+1. Analysis Services models have calculations already created.
+2. If you don’t need an entire table, you can query the data directly. Instead of using Transact-SQL (T-SQL) to query the data, like you would in SQL Server, you can use multi-dimensional expressions (MDX) or data analysis expressions (DAX).
+
 
 
 </details>
