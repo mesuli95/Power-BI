@@ -123,7 +123,31 @@
 ![image](https://github.com/mesuli95/Power-BI/assets/162970734/a3f5502d-19fe-49bb-b260-242a197157d2)
 
 
+# Work with relationships and cardinality
 
+* Unlike other database management systems, Power BI has the concept of directionality to a relationship. This directionality plays an important role in filtering data between multiple tables.
+* When you load data, Power BI automatically looks for relationships that exist within the data by matching column names. You can also use Manage Relationships to edit these options manually.
+* For example, you've retrieved many tables from the Sales database, and the following image is an example of your semantic model.
+* Power BI has autodetected several relationships, but you can't discern what they mean. You want to make sure that the relationships accurately reflect those that exist in your data.
+
+# Relationships
+
+# Many-to-one (*:1) or one-to-many (1: *) relationship
+
+* Describes a relationship in which you have many instances of a value in one column that are related to only one unique corresponding instance in another column.
+
+* Describes the directionality between fact and dimension tables.
+
+* Is the most common type of directionality and is the Power BI default when you are automatically creating relationships.
+
+# One-to-one (1:1) relationship:
+
+* Describes a relationship in which only one instance of a value is common between two tables.
+
+* Requires unique values in both tables.
+
+* Is not recommended because this relationship stores redundant information and suggests that the model is not designed correctly. It is better practice to combine the tables.
+  
 
 
 
