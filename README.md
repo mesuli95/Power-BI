@@ -122,6 +122,8 @@
 
 ![image](https://github.com/mesuli95/Power-BI/assets/162970734/a3f5502d-19fe-49bb-b260-242a197157d2)
 
+<details>
+ <summary> Get Started with Power BI </summary>
 
 # Work with relationships and cardinality
 
@@ -147,6 +149,31 @@
 * Requires unique values in both tables.
 
 * Is not recommended because this relationship stores redundant information and suggests that the model is not designed correctly. It is better practice to combine the tables.
+
+# Many-to-many (.) relationship:
+
+* Describes a relationship where many values are in common between two tables.
+
+* Does not require unique values in either table in a relationship.
+
+* Is not recommended; a lack of unique values introduces ambiguity and your users might not know which column of values is referring to what.
+
+# Cross-filter direction
+
+* Data can be filtered on one or both sides of a relationship.
+
+# With a single cross-filter direction:
+
+* Only one table in a relationship can be used to filter the data. For instance, Table 1 can be filtered by Table 2, but Table 2 cannot be filtered by Table 1.
+* For a one-to-many or many-to-one relationship, the cross-filter direction will be from the "one" side, meaning that the filtering will occur in the table that has many values.
+
+# With both cross-filter directions or bi-directional cross-filtering:
+
+* One table in a relationship can be used to filter the other. For instance, a dimension table can be filtered through the fact table, and the fact tables can be filtered through the dimension table.
+* You might have lower performance when using bi-directional cross-filtering with many-to-many relationships.
+
+
+</details>
   
 
 
